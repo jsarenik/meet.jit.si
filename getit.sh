@@ -27,6 +27,9 @@ images/welcome_page/github.svg
 images/welcome_page/googleplay.png
 images/welcome_page/linkedin.svg
 images/welcome_page/twitter.svg
+lang/countries-cs.json
+lang/main-cs.json
+lang/languages-cs.json
 static/welcomePageAdditionalContent.html
 EOF
 } | while read file
