@@ -37,5 +37,8 @@ do
   DIR=/$file
   DIR=public/${DIR%/*}
   test -d $DIR || mkdir -p $DIR
-  wget -qc -O public/$file https://meet.jit.si/$file && echo $file || echo ERROR $file
+  mv public/$file backup/$file
+  #wget -q -O public/$file https://meet.jit.si/$file && echo $file || echo ERROR $file
+  wget -q -O public/$file https://web-cdn.jitsi.net/meetjitsi_4080.731/$file \
+    && echo $file || { echo ERROR $file; mv backup/$file public/$file; }
 done
