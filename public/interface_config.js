@@ -130,7 +130,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://github.com/jitsi/jitsi-meet/issues/new',
+    SUPPORT_URL: 'https://community.jitsi.org/',
 
     /**
      * Whether the connection indicator icon should hide itself based on
@@ -177,7 +177,7 @@ var interfaceConfig = {
     // has a suboptimal experience. Browsers which are not listed as optimal or
     // unsupported are considered suboptimal. Valid values are:
     // chrome, chromium, edge, electron, firefox, nwjs, opera, safari
-    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'nwjs', 'electron', 'firefox' ],
+    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'nwjs', 'electron', 'firefox', 'safari' ],
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.

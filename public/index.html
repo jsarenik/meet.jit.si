@@ -1,15 +1,15 @@
 <html itemscope itemtype="http://schema.org/Product" prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/html">
   <head>
-    
+    <meta http-equiv="origin-trial" content="AlYt4SkqDpEomRMi/0NAzM8cNvqO7LauElddhx9zbR/d3gkKwin7ZPJ7HTVDOR+BM7Auf8lNfDWZIVWT+nIVlwQAAABZeyJvcmlnaW4iOiJodHRwczovL21lZXQuaml0LnNpOjQ0MyIsImZlYXR1cmUiOiJSVENJbnNlcnRhYmxlU3RyZWFtcyIsImV4cGlyeSI6MTU4OTgxNjkzNH0=">
+
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html;charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base href="https://web-cdn.jitsi.net/meetjitsi_4025.677/" />
-<meta http-equiv="origin-trial" content="AlYt4SkqDpEomRMi/0NAzM8cNvqO7LauElddhx9zbR/d3gkKwin7ZPJ7HTVDOR+BM7Auf8lNfDWZIVWT+nIVlwQAAABZeyJvcmlnaW4iOiJodHRwczovL21lZXQuaml0LnNpOjQ0MyIsImZlYXR1cmUiOiJSVENJbnNlcnRhYmxlU3RyZWFtcyIsImV4cGlyeSI6MTU4OTgxNjkzNH0=">
+    <base href="https://web-cdn.jitsi.net/meetjitsi_4080.731/" />
 
 
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/all.css?v=4020.672">
+    <link rel="stylesheet" href="css/all.css?v=4074.724">
 
     <script>
         // IE11 and earlier can be identified via their user agent and be
@@ -32,7 +32,7 @@
             "logging_config.js",
             "lib-jitsi-meet.min.js",
             "app.bundle.min.js",
-            "all.css?v=4020.672"
+            "all.css?v=4074.724"
         ];
         var loadErrHandler = function(e) {
             var target = e.target;
@@ -177,25 +177,15 @@ analytics: {
             amplitudeAPPKey: "fafdba4c3b47fe5f151060ca37f02d2f",
                         whiteListedEvents: [ 'conference.joined', 'page.reload.scheduled', 'rejoined', 'transport.stats' ],
     },
-    p2pStunServers: [
-        { urls: "stun:stun.l.google.com:19302" },
-        { urls: "stun:stun1.l.google.com:19302" },
-        { urls: "stun:stun2.l.google.com:19302" }
-    ],
     enableP2P: true, // flag to control P2P connections
     // New P2P options
     p2p: {
         enabled: true,
         preferH264: true,
         disableH264: true,
-        useStunTurn: true, // use XEP-0215 to fetch STUN and TURN server for the P2P connection
-        stunServers: [
-            { urls: "stun:stun.l.google.com:19302" },
-            { urls: "stun:stun1.l.google.com:19302" },
-            { urls: "stun:stun2.l.google.com:19302" }
-        ]
+        useStunTurn: true // use XEP-0215 to fetch STUN and TURN servers for the P2P connection
     },
-    useStunTurn: true, // use XEP-0215 to fetch STUN and TURN server for the JVB connection
+    useStunTurn: true, // use XEP-0215 to fetch TURN servers for the JVB connection
     useIPv6: false, // ipv6 support. use at your own risk
     useNicks: false,
     bosh: '//meet.jit.si/http-bind', // FIXME: use xep-0156 for that
@@ -294,8 +284,8 @@ analytics: {
     deploymentInfo: {
         environment: 'meet-jit-si',
         envType: 'prod',
-        releaseNumber: '583',
-        shard: 'meet-jit-si-eu-central-1b-s59',
+        releaseNumber: '631',
+        shard: 'meet-jit-si-eu-central-1a-s28',
         region: 'eu-central-1',
         userRegion: 'eu-central-1',
         crossRegion: (!'eu-central-1' || 'eu-central-1' === 'eu-central-1') ? 0 : 1
@@ -455,7 +445,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://github.com/jitsi/jitsi-meet/issues/new',
+    SUPPORT_URL: 'https://community.jitsi.org/',
 
     /**
      * Whether the connection indicator icon should hide itself based on
@@ -502,7 +492,7 @@ var interfaceConfig = {
     // has a suboptimal experience. Browsers which are not listed as optimal or
     // unsupported are considered suboptimal. Valid values are:
     // chrome, chromium, edge, electron, firefox, nwjs, opera, safari
-    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'nwjs', 'electron', 'firefox' ],
+    OPTIMAL_BROWSERS: [ 'chrome', 'chromium', 'nwjs', 'electron', 'firefox', 'safari' ],
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
@@ -601,8 +591,8 @@ typeof module === 'object'
     && typeof exports === 'object'
     && (module.exports = loggingConfig);
 </script>
-    <script src="libs/lib-jitsi-meet.min.js?v=4020.672"></script>
-    <script src="libs/app.bundle.min.js?v=4020.672"></script>
+    <script src="libs/lib-jitsi-meet.min.js?v=4074.724"></script>
+    <script src="libs/app.bundle.min.js?v=4074.724"></script>
     <title>Jitsi Meet</title>
 <meta property="og:title" content="Jitsi Meet"/>
 <meta property="og:image" content="images/jitsilogo.png?v=1"/>
@@ -709,6 +699,9 @@ typeof module === 'object'
                     href="http://jitsi.org/meet-jit-si-terms-of-service/"
                     rel="noopener"
                     target="_blank">terms of service</a>.
+                </div>
+                <div>
+                    Report abuse <a href="mailto:abuse@jitsi.org" target="_blank">here</a>.
                 </div>
             </div>
             <div class="welcome-footer-connect">

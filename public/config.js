@@ -32,25 +32,15 @@ analytics: {
             amplitudeAPPKey: "fafdba4c3b47fe5f151060ca37f02d2f",
                         whiteListedEvents: [ 'conference.joined', 'page.reload.scheduled', 'rejoined', 'transport.stats' ],
     },
-    p2pStunServers: [
-        { urls: "stun:stun.l.google.com:19302" },
-        { urls: "stun:stun1.l.google.com:19302" },
-        { urls: "stun:stun2.l.google.com:19302" }
-    ],
     enableP2P: true, // flag to control P2P connections
     // New P2P options
     p2p: {
         enabled: true,
         preferH264: true,
         disableH264: true,
-        useStunTurn: true, // use XEP-0215 to fetch STUN and TURN server for the P2P connection
-        stunServers: [
-            { urls: "stun:stun.l.google.com:19302" },
-            { urls: "stun:stun1.l.google.com:19302" },
-            { urls: "stun:stun2.l.google.com:19302" }
-        ]
+        useStunTurn: true // use XEP-0215 to fetch STUN and TURN servers for the P2P connection
     },
-    useStunTurn: true, // use XEP-0215 to fetch STUN and TURN server for the JVB connection
+    useStunTurn: true, // use XEP-0215 to fetch TURN servers for the JVB connection
     useIPv6: false, // ipv6 support. use at your own risk
     useNicks: false,
     bosh: '//meet.jit.si/http-bind', // FIXME: use xep-0156 for that
@@ -149,8 +139,8 @@ analytics: {
     deploymentInfo: {
         environment: 'meet-jit-si',
         envType: 'prod',
-        releaseNumber: '583',
-        shard: 'meet-jit-si-eu-central-1b-s1',
+        releaseNumber: '631',
+        shard: 'meet-jit-si-eu-central-1b-s117',
         region: 'eu-central-1',
         userRegion: 'eu-central-1',
         crossRegion: (!'eu-central-1' || 'eu-central-1' === 'eu-central-1') ? 0 : 1
@@ -174,4 +164,3 @@ analytics: {
         }
     }
 };
-;
