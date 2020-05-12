@@ -40,8 +40,8 @@ do
   BDIR=backup/${ODIR%/*}
   test -d $BDIR || mkdir -p $BDIR
   mv public/$file backup/$file
-  wget -q -O public/$file https://web-cdn.jitsi.net/meetjitsi_4080.731/$file \
+  #wget -q -O public/$file https://web-cdn.jitsi.net/meetjitsi_4080.731/$file \
+  wget -q -O public/$file https://meet.jit.si/$file \
     && echo $file \
-    || { wget -q -O public/$file https://meet.jit.si/$file && echo $file; } \
     || { echo ERROR $file; mv backup/$file public/$file; }
 done
